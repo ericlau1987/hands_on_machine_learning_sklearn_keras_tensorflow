@@ -9,9 +9,9 @@ services:
     volumes:
       - .:/home/jovyan
   postgres:
-    container_name: postgres
+    container_name: postgres_hands_on_ml
     build: ./docker/postgres
-    image: postgres
+    image: postgres:hands_on_ml
     volumes:
       - postgres_data:/var/lib/postgresql/data
     user: postgres
