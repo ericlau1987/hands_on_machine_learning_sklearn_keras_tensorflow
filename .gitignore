@@ -134,3 +134,8 @@ dmypy.json
 .jupyter/
 .local/
 scikit_learn_data/
+
+.vscode-server/
+.gitconfig
+.devcontainer/
+.ssh/
