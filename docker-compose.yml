@@ -1,0 +1,25 @@
+version: '3'
+services:
+  jupyter_hands_on_ml:
+    container_name: jupyter_hands_on_ml
+    build: ./docker/jupyter
+    image: jupyter:hands_on_ml
+    ports:
+     - 8888:8888
+    volumes:
+      - .:/home/jovyan
+  postgres:
+    container_name: postgres_hands_on_ml
+    build: ./docker/postgres
+    image: postgres:hands_on_ml
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    user: postgres
+    environment:
+      # - POSTGRES_HOST_AUTH_METHOD=trust
+      - POSTGRES_DB=hands_on_ml
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+volumes:
+  postgres_data:

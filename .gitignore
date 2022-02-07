@@ -129,3 +129,13 @@ dmypy.json
 .pyre/
 
 .DS_Store
+
+
+.jupyter/
+.local/
+scikit_learn_data/
+
+.vscode-server/
+.gitconfig
+.devcontainer/
+.ssh/
