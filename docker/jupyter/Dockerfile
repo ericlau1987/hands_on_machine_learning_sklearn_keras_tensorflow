@@ -1,4 +1,5 @@
-FROM jupyter/scipy-notebook
+# FROM jupyter/scipy-notebook
+FROM conda/miniconda3
 
 USER root
 

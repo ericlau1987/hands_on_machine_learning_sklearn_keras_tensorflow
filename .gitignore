@@ -139,3 +139,5 @@ scikit_learn_data/
 .gitconfig
 .devcontainer/
 .ssh/
+
+.csv
